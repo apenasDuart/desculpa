@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .apology {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        .apology h1 {
+            color: #333;
+        }
+        .apology p {
+            color: #666;
+        }
+        .apology button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #008CBA;
+            color: white;
+            cursor: pointer;
+        }
+        .apology button:hover {
+            background-color: #007B9A;
+        }
+    </style>
+</head>
+<body>
+    <div class="apology">
+        <h1 id="title">Desculpa amor...</h1>
+        <p id="message">Eu sinto muito pelo que aconteceu, não queria que as coisas fossem assim de verdade...</p>
+        <button onclick="apologizeAgain()">Por favor...</button>
+    </div>
+
+    <script>
+        function apologizeAgain() {
+            document.getElementById('title').innerText = 'Eu realmente sinto muito';
+            document.getElementById('message').innerText = 'Eu queria ter sido uma pessoa melhor pra você e no final só estou sendo egoista... se quiser tentar ainda me manda uma mensagem, te amo <3';
+        }
+    </script>
+</body>
+</html>
